@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tanushreechaubal.back_to_schoolquizapp.BackToSchoolMainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/background_light"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Let's Play!"
+            android:textAlignment="center"
+            android:id="@+id/letsPlay_textView"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/questionBackground"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question1_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question1_textView"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:background="@color/questionBackground"
+                android:text="India has the largest deposits of _____ in the world."
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question1_radioGroup"
+                android:layout_below="@+id/question1_textView">
+
+                <RadioButton
+                    android:id="@+id/question1_radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Gold"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question1_radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mica"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question1_radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Copper"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question1_radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="None of the above"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question2_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question2_textView"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:background="@color/questionBackground"
+                android:text="Which of the following are NOT Vitamins?"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2_textView"
+                android:id="@+id/question2_checkbox1"
+                android:text="B"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2_checkbox1"
+                android:id="@+id/question2_checkbox2"
+                android:text="K"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2_checkbox2"
+                android:id="@+id/question2_checkbox3"
+                android:text="D"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2_checkbox3"
+                android:id="@+id/question2_checkbox4"
+                android:text="W"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2_checkbox4"
+                android:id="@+id/question2_checkbox5"
+                android:text="A"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2_checkbox5"
+                android:id="@+id/question2_checkbox6"
+                android:text="N"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2_checkbox6"
+                android:id="@+id/question2_checkbox7"
+                android:text="C"
+                android:textColor="@color/questionBackground"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question3_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorPrimary"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:id="@+id/question3_textView"
+                android:background="@color/questionBackground"
+                android:text="How many reindeer drive Santa's sleigh?"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question3_editText"
+                android:textColor="@color/questionBackground"
+                android:layout_below="@+id/question3_textView"
+                android:textAlignment="viewStart"
+                android:visibility="visible"
+                android:layout_gravity="start"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question4_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question4_textView"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:background="@color/questionBackground"
+                android:text="Galileo was an Italian astronomer who: "
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question4_radioGroup"
+                android:layout_below="@+id/question4_textView">
+
+                <RadioButton
+                    android:id="@+id/question4_radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="developed the telescope"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question4_radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="discovered four satellites of Jupiter"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question4_radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="discovered that movement of the pendulum produces a regular time measurement"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question4_radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All of the above"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question5_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question5_textView"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:background="@color/questionBackground"
+                android:text="Which of the following have been India's Prime Ministers?"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question5_textView"
+                android:id="@+id/question5_checkbox1"
+                android:text="Indira Gandhi"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question5_checkbox1"
+                android:id="@+id/question5_checkbox2"
+                android:text="Zakir Husain"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question5_checkbox2"
+                android:id="@+id/question5_checkbox3"
+                android:text="Sushma Swaraj"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question5_checkbox3"
+                android:id="@+id/question5_checkbox4"
+                android:text="Rajnath Singh"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question5_checkbox4"
+                android:id="@+id/question5_checkbox5"
+                android:text="I.K.Gujral"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question5_checkbox5"
+                android:id="@+id/question5_checkbox6"
+                android:text="Lal Bahadur Shastri"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question5_checkbox6"
+                android:id="@+id/question5_checkbox7"
+                android:text="Rajendra Prasad"
+                android:textColor="@color/questionBackground"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question6_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:id="@+id/question6_textView"
+                android:background="@color/questionBackground"
+                android:text="Enter the name of the 1975 superhit Bollywood movie with the iconic villian 'Gabbar'."
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question6_editText"
+                android:layout_below="@+id/question6_textView"
+                android:textAlignment="viewStart"
+                android:layout_gravity="start"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question7_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question7_textView"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:background="@color/questionBackground"
+                android:text="If force is expressed in Newton, distance in meters, then work done is expressed in:  "
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question7_radioGroup"
+                android:layout_below="@+id/question7_textView">
+
+                <RadioButton
+                    android:id="@+id/question7_radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Kg wt"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question7_radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kg wt m"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question7_radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Joule"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question7_radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Watt"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question8_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question8_textView"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:background="@color/questionBackground"
+                android:text="Which of the following flowers bloom all year long?"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question8_textView"
+                android:id="@+id/question8_checkbox1"
+                android:text="Aster"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question8_checkbox1"
+                android:id="@+id/question8_checkbox2"
+                android:text="Dahlia"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question8_checkbox2"
+                android:id="@+id/question8_checkbox3"
+                android:text="Chrysanthemum"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question8_checkbox3"
+                android:id="@+id/question8_checkbox4"
+                android:text="Jasmine"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question8_checkbox4"
+                android:id="@+id/question8_checkbox5"
+                android:text="Carnation"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question8_checkbox5"
+                android:id="@+id/question8_checkbox6"
+                android:text="Poppy"
+                android:textColor="@color/questionBackground"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question8_checkbox6"
+                android:id="@+id/question8_checkbox7"
+                android:text="Tulip"
+                android:textColor="@color/questionBackground"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question9_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question9_textView"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:background="@color/questionBackground"
+                android:text="How many players are there on each team in the game of Basketball?"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question9_radioGroup"
+                android:layout_below="@+id/question9_textView">
+
+                <RadioButton
+                    android:id="@+id/question9_radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="4"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question9_radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question9_radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+                <RadioButton
+                    android:id="@+id/question9_radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textColor="@color/questionBackground"
+                    android:background="@android:color/white" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/question10_relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:id="@+id/question10_textView"
+                android:background="@color/questionBackground"
+                android:text="Complete the following proverb: '____ is the best medicine!'."
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question10_editText"
+                android:layout_below="@+id/question10_textView"
+                android:textAlignment="viewStart"
+                android:layout_gravity="start"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/submitButton_relativeLayout">
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="submitQuiz"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:text="Submit Quiz"
+                android:textAllCaps="true"
+                android:textColor="@color/questionBackground"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
